@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Fitness Tracking System</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Health Fitness Tracking System</h1>
+    </header>
+    <main>
+        <section id="mlModel">
+            <form id="mlForm">
+                <label for="heartRate">Heart Rate:</label>
+                <input type="number" id="heartRate" name="heartRate" placeholder="Enter heart rate">
+                <label for="caloriesBurnt">Calories Burnt:</label>
+                <input type="number" id="caloriesBurnt" name="caloriesBurnt" placeholder="Enter calories burnt">
+                <label for="spo2">SpO2:</label>
+                <input type="number" id="spo2" name="spo2" placeholder="Enter spo2">
+                <label for="hoursOfSleep">Hours of Sleep:</label>
+                <input type="number" id="hoursOfSleep" name="hoursOfSleep" placeholder="Enter hours of sleep">
+                <label for="bp">Blood Pressure:</label>
+                <input type="number" id="bp" name="bp" placeholder="Enter blood pressure">
+                <label for="totalSteps">Total Steps:</label>
+                <input type="number" id="totalSteps" name="totalSteps" placeholder="Enter total steps">
+                <label for="totalDistance">Total Distance:</label>
+                <input type="number" id="totalDistance" name="totalDistance" placeholder="Enter total distance">
+                <button type="button" onclick="processData()">Process Data</button>
+            </form>
+            <div id="mlResults">
+                <!-- Machine learning results will be displayed here -->
+            </div>
+        </section>
+        <section id="aiSuggestions">
+            <h2>AI Suggestions</h2>
+            <div id="aiDisplay">
+                <!-- AI suggestions will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Health Fitness Tracking System</p>
+    </footer>
+    <script src="scripts.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
